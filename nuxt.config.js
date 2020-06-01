@@ -25,14 +25,24 @@ export default {
   css: [
   ],
   /*
+  ** Global SCSS Variables
+  */
+  styleResources: {
+    scss: ['~/assets/styles/tokens.scss']
+  },
+  /*
   ** Plugins to load before mounting the App
   */
   plugins: [
+    '~/plugins/vue-placeholders.js',
+    '~/plugins/vue-observe-visibility.client.js'
   ],
   /*
   ** Nuxt.js dev-modules
   */
   buildModules: [
+    '@nuxtjs/svg',
+    '@nuxtjs/style-resources',
   ],
   /*
   ** Nuxt.js modules
